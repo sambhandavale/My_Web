@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'styles/home/main.css' %}">
+</head>
+<body>
+    <h1>Welcome HOME</h1>
+    {% for i in user %}
+        <h2><a href="user-data/{{i.No}}">{{ i.Name }}</a></h2>
+    {% endfor %}
+</body>
+</html>
